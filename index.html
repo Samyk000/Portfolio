@@ -4,70 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sameer — Senior Technical Recruiter</title>
-    <meta name="description" content="Senior Technical Recruiter with 5+ years building high-performing engineering teams for Meta, SVB, Liberty Mutual, Raymond James & more.">
+    <meta name="description" content="Senior Technical Recruiter with 5+ years building high-performing engineering teams.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --bg:#050505;--bg-soft:#0a0a0a;--bg-card:#0d0d0d;--bg-elevated:#131313;
-            --border:rgba(255,255,255,0.06);--border-hover:rgba(255,255,255,0.14);
-            --text-main:#f0f0f0;--text-secondary:#9494a0;--text-muted:#5a5a68;--text-dim:#3a3a44;
-            --accent:#ff6b4a;--accent-glow:rgba(255,107,74,0.15);--accent-dim:rgba(255,107,74,0.06);--accent-border:rgba(255,107,74,0.15);
-            --purple:#a855f7;--purple-glow:rgba(168,85,247,0.12);
-            --green:#22c55e;--green-dim:rgba(34,197,94,0.1);
-            --yellow:#fbbf24;--yellow-dim:rgba(251,191,36,0.1);
-            --ease:cubic-bezier(0.22,1,0.36,1);
-            --mono:'JetBrains Mono',monospace;
-            --r-sm:8px;--r-md:12px;--r-lg:16px;--r-xl:20px;
-        }
-        [data-theme="light"] {
-            --bg:#f7f7f8;--bg-soft:#f0f0f2;--bg-card:#ffffff;--bg-elevated:#ffffff;
-            --border:rgba(0,0,0,0.07);--border-hover:rgba(0,0,0,0.14);
-            --text-main:#111114;--text-secondary:#555560;--text-muted:#888894;--text-dim:#b0b0b8;
-            --accent:#e85d3a;--accent-glow:rgba(232,93,58,0.1);--accent-dim:rgba(232,93,58,0.04);--accent-border:rgba(232,93,58,0.18);
-            --purple:#9333ea;--purple-glow:rgba(147,51,234,0.08);
-            --green:#16a34a;--green-dim:rgba(22,163,74,0.08);
-            --yellow:#d97706;--yellow-dim:rgba(217,119,6,0.08);
-        }
-        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-        html{scroll-behavior:smooth}
-        *{-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none}
-        button,a,input{outline:none}
-        body{
-            font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
-            background:var(--bg);color:var(--text-main);line-height:1.6;
-            overflow-x:hidden;-webkit-font-smoothing:antialiased;
-            -moz-osx-font-smoothing:grayscale;
-            transition:background .5s var(--ease),color .5s var(--ease)
-        }
-        ::selection{background:var(--accent);color:#fff}
-        .serif-i{font-family:'Playfair Display',serif;font-style:italic}
-        .mono{font-family:var(--mono)}
-        .text-accent{color:var(--accent)}
-        .container{max-width:1080px;margin:0 auto;width:100%;padding:0 2rem}
-
-        /* Progress */
+        :root{--bg:#050505;--bg-soft:#0a0a0a;--bg-card:#0d0d0d;--border:rgba(255,255,255,.06);--border-hover:rgba(255,255,255,.14);--text-main:#f0f0f0;--text-secondary:#9494a0;--text-muted:#5a5a68;--text-dim:#3a3a44;--accent:#ff6b4a;--accent-glow:rgba(255,107,74,.15);--accent-dim:rgba(255,107,74,.06);--accent-border:rgba(255,107,74,.15);--purple:#a855f7;--purple-glow:rgba(168,85,247,.12);--green:#22c55e;--green-dim:rgba(34,197,94,.1);--yellow:#fbbf24;--yellow-dim:rgba(251,191,36,.1);--ease:cubic-bezier(.22,1,.36,1);--mono:'JetBrains Mono',monospace;--r-sm:8px;--r-md:12px;--r-lg:16px;--r-xl:20px}
+        [data-theme="light"]{--bg:#f7f7f8;--bg-soft:#f0f0f2;--bg-card:#fff;--border:rgba(0,0,0,.07);--border-hover:rgba(0,0,0,.14);--text-main:#111114;--text-secondary:#555560;--text-muted:#888894;--text-dim:#b0b0b8;--accent:#e85d3a;--accent-glow:rgba(232,93,58,.1);--accent-dim:rgba(232,93,58,.04);--accent-border:rgba(232,93,58,.18);--purple:#9333ea;--purple-glow:rgba(147,51,234,.08);--green:#16a34a;--green-dim:rgba(22,163,74,.08);--yellow:#d97706;--yellow-dim:rgba(217,119,6,.08)}
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}*{-webkit-tap-highlight-color:transparent}button,a,input{outline:none}
+        body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg);color:var(--text-main);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;transition:background .5s var(--ease),color .5s var(--ease)}
+        ::selection{background:var(--accent);color:#fff}.serif-i{font-family:'Playfair Display',serif;font-style:italic}.text-accent{color:var(--accent)}
+        .container{max-width:1080px;margin:0 auto;width:100%;padding:0 2rem}.container-wide{max-width:1380px;margin:0 auto;width:100%;padding:0 2rem}
         .scroll-progress{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--purple));z-index:10000;width:0%;will-change:width}
-
-        /* Cursor */
         .cursor-dot{width:6px;height:6px;background:var(--accent);border-radius:50%;position:fixed;pointer-events:none;z-index:9999;mix-blend-mode:difference;will-change:transform}
         .cursor-ring{width:36px;height:36px;border:1.5px solid var(--accent);border-radius:50%;position:fixed;pointer-events:none;z-index:9998;transition:all .15s ease-out;opacity:.4;will-change:transform}
+
+        .ico{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+        .ico-sm{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+        .ico-xl{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+        .ico-lg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
 
         /* Nav */
         nav{position:fixed;top:0;left:0;right:0;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;z-index:100;transition:all .4s var(--ease)}
         nav.scrolled{padding:.6rem 2rem;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border-bottom:1px solid var(--border)}
-        .nav-logo{width:40px;height:40px;position:relative;cursor:pointer;display:flex;align-items:center;justify-content:center;text-decoration:none}
-        .logo-canvas{width:40px;height:40px;position:relative}
-        .logo-ring{position:absolute;inset:0;border-radius:50%;border:1.5px solid var(--accent);animation:logoSpin 12s linear infinite}
-        .logo-ring::before{content:'';position:absolute;top:-2.5px;left:50%;transform:translateX(-50%);width:5px;height:5px;background:var(--accent);border-radius:50%;box-shadow:0 0 8px var(--accent)}
-        .logo-ring-inner{position:absolute;inset:6px;border-radius:50%;border:1px solid var(--border-hover);animation:logoSpin 8s linear infinite reverse}
-        .logo-ring-inner::before{content:'';position:absolute;bottom:-2px;left:50%;transform:translateX(-50%);width:4px;height:4px;background:var(--purple);border-radius:50%;box-shadow:0 0 6px var(--purple)}
-        .logo-letter{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-style:italic;font-weight:700;font-size:17px;color:var(--text-main);z-index:2;transition:all .4s var(--ease)}
-        .nav-logo:hover .logo-letter{color:var(--accent);transform:scale(1.1)}
-        .nav-logo:hover .logo-ring{border-color:var(--purple);animation-duration:4s}
-        .nav-logo:hover .logo-ring-inner{border-color:var(--accent);animation-duration:3s}
-        @keyframes logoSpin{to{transform:rotate(360deg)}}
+
+        /* ===== ENHANCED LOGO (no letter) ===== */
+        .nav-logo{width:42px;height:42px;position:relative;cursor:pointer;display:flex;align-items:center;justify-content:center;text-decoration:none}
+        .logo-canvas{width:42px;height:42px;position:relative}
+        .logo-ring-outer{position:absolute;inset:0;border-radius:50%;border:1.5px solid var(--accent);animation:spin 14s linear infinite}
+        .logo-ring-outer::before{content:'';position:absolute;top:-2px;left:50%;transform:translateX(-50%);width:5px;height:5px;background:var(--accent);border-radius:50%;box-shadow:0 0 8px var(--accent),0 0 16px var(--accent-glow)}
+        .logo-ring-outer::after{content:'';position:absolute;bottom:-2px;left:50%;transform:translateX(-50%);width:3px;height:3px;background:var(--accent);border-radius:50%;box-shadow:0 0 6px var(--accent);opacity:.6}
+        .logo-ring-mid{position:absolute;inset:5px;border-radius:50%;border:1px solid var(--purple);animation:spin 9s linear infinite reverse;opacity:.7}
+        .logo-ring-mid::before{content:'';position:absolute;top:50%;right:-2px;transform:translateY(-50%);width:4px;height:4px;background:var(--purple);border-radius:50%;box-shadow:0 0 6px var(--purple)}
+        .logo-ring-mid::after{content:'';position:absolute;top:50%;left:-2px;transform:translateY(-50%);width:3px;height:3px;background:var(--purple);border-radius:50%;box-shadow:0 0 4px var(--purple);opacity:.6}
+        .logo-ring-inner{position:absolute;inset:12px;border-radius:50%;border:1px solid var(--accent-border);animation:spin 6s linear infinite;opacity:.4}
+        .logo-ring-inner::before{content:'';position:absolute;top:-1.5px;left:50%;transform:translateX(-50%);width:3px;height:3px;background:var(--accent);border-radius:50%}
+        .logo-center-dot{position:absolute;inset:17px;border-radius:50%;background:radial-gradient(circle,var(--accent) 0%,var(--accent-glow) 60%,transparent 100%);animation:pulse 3s ease-in-out infinite;opacity:.3}
+        .nav-logo:hover .logo-ring-outer{border-color:var(--accent);animation-duration:4s}
+        .nav-logo:hover .logo-ring-mid{border-color:var(--accent);opacity:1;animation-duration:3s}
+        .nav-logo:hover .logo-ring-inner{border-color:var(--purple);opacity:.7;animation-duration:2s}
+        .nav-logo:hover .logo-center-dot{opacity:.6;transform:scale(1.2)}
+        @keyframes spin{to{transform:rotate(360deg)}}
+        @keyframes pulse{0%,100%{transform:scale(1);opacity:.3}50%{transform:scale(1.15);opacity:.5}}
+
         .nav-center{display:flex;gap:.15rem;align-items:center}
         .nav-link{color:var(--text-muted);text-decoration:none;font-size:.82rem;font-weight:500;padding:.4rem .75rem;border-radius:var(--r-sm);transition:all .3s var(--ease)}
         .nav-link:hover{color:var(--text-main);background:var(--accent-dim)}
@@ -79,21 +58,13 @@
         .theme-toggle .icon-sun,.theme-toggle .icon-moon{position:absolute;transition:all .4s var(--ease)}
         [data-theme="dark"] .icon-sun{opacity:1;transform:rotate(0) scale(1)}[data-theme="dark"] .icon-moon{opacity:0;transform:rotate(90deg) scale(0)}
         [data-theme="light"] .icon-sun{opacity:0;transform:rotate(-90deg) scale(0)}[data-theme="light"] .icon-moon{opacity:1;transform:rotate(0) scale(1)}
-        .nav-toggle{display:none;width:36px;height:36px;background:none;border:1px solid var(--border);border-radius:var(--r-sm);color:var(--text-main);cursor:pointer;align-items:center;justify-content:center;z-index:201;position:relative;transition:all .3s var(--ease)}
+        .nav-toggle{display:none;width:36px;height:36px;background:none;border:1px solid var(--border);border-radius:var(--r-sm);color:var(--text-main);cursor:pointer;align-items:center;justify-content:center;z-index:201;transition:all .3s var(--ease)}
         .nav-toggle:active,.mobile-close:active{transform:none;background:none}
-
-        /* Mobile */
         .mobile-overlay{position:fixed;top:0;left:0;right:0;background:var(--bg);z-index:150;flex-direction:column;align-items:center;padding:5rem 2rem 2.5rem;gap:.25rem;transform:translateY(-100%);opacity:0;transition:transform .5s var(--ease),opacity .4s var(--ease);border-bottom:1px solid var(--border);display:flex;pointer-events:none;box-shadow:0 20px 60px -15px rgba(0,0,0,.5)}
         .mobile-overlay.open{transform:translateY(0);opacity:1;pointer-events:all}
-        .mobile-overlay .mob-link{font-size:1rem;font-weight:600;color:var(--text-secondary);text-decoration:none;transition:color .3s,transform .3s;padding:.7rem 1.5rem;border-radius:var(--r-md);width:100%;text-align:center}
-        .mobile-overlay .mob-link:hover,.mobile-overlay .mob-link:active{color:var(--accent);background:var(--accent-dim)}
-        .mobile-close{position:absolute;top:1rem;right:2rem;width:36px;height:36px;background:none;border:1px solid var(--border);border-radius:var(--r-sm);color:var(--text-main);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s var(--ease)}
-
-        /* SVG icons */
-        .ico{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
-        .ico-sm{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
-        .ico-xl{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
-        .ico-lg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+        .mobile-overlay .mob-link{font-size:1rem;font-weight:600;color:var(--text-secondary);text-decoration:none;transition:color .3s;padding:.7rem 1.5rem;border-radius:var(--r-md);width:100%;text-align:center}
+        .mobile-overlay .mob-link:hover{color:var(--accent);background:var(--accent-dim)}
+        .mobile-close{position:absolute;top:1rem;right:2rem;width:36px;height:36px;background:none;border:1px solid var(--border);border-radius:var(--r-sm);color:var(--text-main);cursor:pointer;display:flex;align-items:center;justify-content:center}
 
         /* Hero */
         .hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:7rem 0 3rem;position:relative;overflow:hidden}
@@ -110,20 +81,17 @@
         .typewriter-text{color:var(--text-main);font-weight:600;border-right:2px solid var(--accent);padding-right:3px;animation:cursorBlink 1s step-end infinite}
         .hero-desc{font-size:1rem;color:var(--text-secondary);max-width:620px;line-height:1.75;margin:0 auto 2.2rem;opacity:0;animation:fadeUp .8s var(--ease) .45s forwards}
         .hero-desc strong{color:var(--text-main);font-weight:600}
-        .hero-stats{display:flex;justify-content:center;align-items:center;gap:0;margin-bottom:2.5rem;opacity:0;animation:fadeUp .8s var(--ease) .55s forwards}
+        .hero-stats{display:flex;justify-content:center;align-items:center;margin-bottom:2.5rem;opacity:0;animation:fadeUp .8s var(--ease) .55s forwards}
         .hero-stat{padding:0 2rem;text-align:center}
         .hero-stat-value{font-family:var(--mono);font-size:1.65rem;font-weight:800;color:var(--text-main);letter-spacing:-.02em;display:block;line-height:1.1}
         .hero-stat-label{font-size:.72rem;color:var(--text-muted);font-weight:500;margin-top:.25rem;text-transform:uppercase;letter-spacing:.5px;display:block}
         .hero-stat-divider{width:1px;height:36px;background:var(--border)}
         .hero-actions{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;opacity:0;animation:fadeUp .8s var(--ease) .65s forwards}
-
         .btn-glow{display:inline-flex;align-items:center;gap:.55rem;padding:.8rem 1.6rem;background:var(--accent);color:#fff;font-weight:600;font-size:.9rem;border-radius:var(--r-md);text-decoration:none;transition:all .3s var(--ease);position:relative;overflow:hidden}
         .btn-glow::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent,rgba(255,255,255,.15),transparent);transform:translateX(-100%);transition:transform .5s}
-        .btn-glow:hover::before{transform:translateX(100%)}
-        .btn-glow:hover{transform:translateY(-2px);box-shadow:0 15px 40px -10px rgba(255,107,74,.35)}
+        .btn-glow:hover::before{transform:translateX(100%)}.btn-glow:hover{transform:translateY(-2px);box-shadow:0 15px 40px -10px rgba(255,107,74,.35)}
         .btn-outline{display:inline-flex;align-items:center;gap:.55rem;padding:.8rem 1.6rem;background:transparent;color:var(--text-main);font-weight:500;font-size:.9rem;border-radius:var(--r-md);text-decoration:none;border:1px solid var(--border);transition:all .3s var(--ease)}
         .btn-outline:hover{border-color:var(--text-muted);background:var(--accent-dim);transform:translateY(-2px)}
-
         .trusted-section{margin-top:4rem;opacity:0;animation:fadeUp .8s var(--ease) .9s forwards}
         .trusted-label{font-size:.65rem;text-transform:uppercase;letter-spacing:3px;color:var(--text-dim);margin-bottom:1rem;font-weight:600}
         .trusted-logos{display:flex;justify-content:center;gap:.6rem;flex-wrap:wrap}
@@ -131,109 +99,110 @@
         .trusted-item:hover{border-color:var(--accent-border);color:var(--text-main);transform:translateY(-2px)}
         .trusted-item .ico-xs{width:12px;height:12px;stroke:var(--accent);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
 
-        /* Sections */
-        section{padding:6rem 0}
-        .section-header{margin-bottom:3.5rem}
-        .section-tag{display:inline-flex;align-items:center;gap:.5rem;color:var(--accent);font-size:.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:.7rem}
+        /* ===== DUAL ROW ===== */
+        .dual-row{padding:4rem 0;border-bottom:1px solid var(--border)}
+        .dual-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+        .dual-col{position:relative;padding:0 .5rem}
+        .dual-col::after{content:'';position:absolute;right:-1.5rem;top:0;height:100%;width:1px;background:var(--border)}
+        .dual-col:last-child::after{display:none}
+        .section-tag{display:inline-flex;align-items:center;gap:.5rem;color:var(--accent);font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:.6rem}
         .section-tag::before{content:'';width:18px;height:2px;background:var(--accent)}
-        .section-title{font-size:clamp(1.8rem,3.2vw,2.5rem);font-weight:800;letter-spacing:-.03em;line-height:1.15}
-        .section-subtitle{font-size:.95rem;color:var(--text-secondary);margin-top:.7rem;max-width:560px;line-height:1.7}
+        .section-title{font-size:clamp(1.55rem,2.2vw,1.95rem);font-weight:800;letter-spacing:-.03em;line-height:1.15}
+        .section-subtitle{font-size:.85rem;color:var(--text-secondary);margin-top:.5rem;line-height:1.6}
+        .section-header{margin-bottom:1.5rem}
+        .section-divider{margin:2.5rem 0 1.5rem;border:none;border-top:1px solid var(--border)}
 
         /* Experience */
-        .timeline{display:flex;flex-direction:column;gap:1rem}
-        .exp-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:2rem;display:grid;grid-template-columns:155px 1fr;gap:2rem;transition:all .4s var(--ease);position:relative}
-        .exp-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent);border-radius:0 3px 3px 0;opacity:0;transition:opacity .3s}
-        .exp-card:hover{border-color:var(--border-hover);box-shadow:0 15px 40px -10px rgba(0,0,0,.2)}
-        .exp-card:hover::before{opacity:1}
-        .exp-date-section{padding-top:.1rem}
-        .exp-current{display:inline-flex;align-items:center;gap:.35rem;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:.45rem;padding:.2rem .6rem;background:var(--accent-dim);border:1px solid var(--accent-border);border-radius:100px}
-        .current-dot{width:6px;height:6px;background:var(--green);border-radius:50%}
-        .exp-dates{font-family:var(--mono);font-size:.78rem;color:var(--text-muted);line-height:1.5}
-        .exp-location{font-size:.73rem;color:var(--text-dim);margin-top:.35rem;display:flex;align-items:center;gap:.3rem}
-        .exp-role-title{font-size:1.15rem;font-weight:800;margin-bottom:.15rem;letter-spacing:-.02em}
-        .exp-company-name{font-size:.9rem;color:var(--text-secondary);margin-bottom:1rem}
-        .exp-bullets{list-style:none;margin-bottom:1rem}
-        .exp-bullets li{position:relative;padding-left:1.3rem;margin-bottom:.45rem;color:var(--text-secondary);font-size:.87rem;line-height:1.55}
-        .exp-bullets li::before{content:'';position:absolute;left:0;top:.55em;width:5px;height:5px;background:var(--accent);border-radius:2px;transform:rotate(45deg)}
-        .chip-row{display:flex;flex-wrap:wrap;gap:.35rem}
-        .chip{font-size:.7rem;padding:.25rem .65rem;border-radius:6px;background:var(--bg-soft);color:var(--text-muted);border:1px solid var(--border);font-weight:500;transition:all .2s}
+        .timeline{display:flex;flex-direction:column;gap:.7rem}
+        .exp-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:1.4rem 1.5rem;transition:all .4s var(--ease);position:relative;overflow:hidden}
+        .exp-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--purple));transform:scaleX(0);transition:transform .4s var(--ease);transform-origin:left}
+        .exp-card:hover{border-color:var(--border-hover);box-shadow:0 12px 35px -10px rgba(0,0,0,.2)}
+        .exp-card:hover::before{transform:scaleX(1)}
+        .exp-meta{display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem;flex-wrap:wrap}
+        .exp-current{display:inline-flex;align-items:center;gap:.35rem;font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--accent);padding:.18rem .55rem;background:var(--accent-dim);border:1px solid var(--accent-border);border-radius:100px}
+        .current-dot{width:5px;height:5px;background:var(--green);border-radius:50%}
+        .exp-dates{font-family:var(--mono);font-size:.72rem;color:var(--text-muted)}
+        .exp-role-title{font-size:1rem;font-weight:800;margin-bottom:.08rem;letter-spacing:-.02em}
+        .exp-company-name{font-size:.82rem;color:var(--text-secondary);margin-bottom:.65rem}
+        .exp-bullets{list-style:none;margin-bottom:.6rem}
+        .exp-bullets li{position:relative;padding-left:1.1rem;margin-bottom:.28rem;color:var(--text-secondary);font-size:.79rem;line-height:1.48}
+        .exp-bullets li::before{content:'';position:absolute;left:0;top:.5em;width:4px;height:4px;background:var(--accent);border-radius:1.5px;transform:rotate(45deg)}
+        .chip-row{display:flex;flex-wrap:wrap;gap:.25rem}
+        .chip{font-size:.6rem;padding:.16rem .48rem;border-radius:5px;background:var(--bg-soft);color:var(--text-muted);border:1px solid var(--border);font-weight:500;transition:all .2s}
         .chip:hover{border-color:var(--accent-border);color:var(--accent);background:var(--accent-dim)}
-        .clients-served{margin-top:.7rem;padding-top:.7rem;border-top:1px dashed var(--border)}
-        .clients-label{font-size:.67rem;text-transform:uppercase;letter-spacing:1px;color:var(--text-dim);font-weight:700;margin-bottom:.4rem}
-        .client-tags{display:flex;flex-wrap:wrap;gap:.35rem}
-        .client-tag{font-size:.7rem;padding:.22rem .6rem;border-radius:6px;background:var(--accent-dim);color:var(--accent);font-weight:600;border:1px solid var(--accent-border)}
+        .clients-served{margin-top:.45rem;padding-top:.45rem;border-top:1px dashed var(--border)}
+        .clients-label{font-size:.58rem;text-transform:uppercase;letter-spacing:1px;color:var(--text-dim);font-weight:700;margin-bottom:.3rem}
+        .client-tags{display:flex;flex-wrap:wrap;gap:.25rem}
+        .client-tag{font-size:.6rem;padding:.15rem .48rem;border-radius:5px;background:var(--accent-dim);color:var(--accent);font-weight:600;border:1px solid var(--accent-border)}
 
         /* Earlier dropdown */
         .earlier-roles{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;transition:all .4s var(--ease)}
         .earlier-roles:hover{border-color:var(--border-hover)}
-        .earlier-toggle{width:100%;background:none;border:none;display:flex;justify-content:space-between;align-items:center;cursor:pointer;padding:1.2rem 1.8rem;color:var(--text-main);font-family:'Inter',sans-serif;transition:background .2s}
+        .earlier-toggle{width:100%;background:none;border:none;display:flex;justify-content:space-between;align-items:center;cursor:pointer;padding:.9rem 1.3rem;color:var(--text-main);font-family:'Inter',sans-serif;transition:background .2s}
         .earlier-toggle:hover{background:var(--accent-dim)}
-        .earlier-header{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--text-dim)}
+        .earlier-header{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--text-dim)}
         .earlier-chevron{color:var(--text-muted);transition:transform .35s var(--ease);display:flex;align-items:center}
         .earlier-chevron.open{transform:rotate(180deg)}
         .earlier-content{max-height:0;overflow:hidden;transition:max-height .45s var(--ease)}
         .earlier-content.open{max-height:500px}
-        .earlier-inner{padding:0 1.8rem 1.2rem}
-        .earlier-item{display:flex;justify-content:space-between;align-items:center;padding:.7rem 0;border-top:1px solid var(--border)}
+        .earlier-inner{padding:0 1.3rem .9rem}
+        .earlier-item{padding:.45rem 0;border-top:1px solid var(--border)}
         .earlier-item:first-child{border-top:none}
-        .earlier-title{font-weight:700;font-size:.88rem}
-        .earlier-company{font-size:.78rem;color:var(--text-muted);margin-top:.1rem}
-        .earlier-year{font-family:var(--mono);font-size:.75rem;color:var(--text-muted);flex-shrink:0;margin-left:1rem}
-        .earlier-bullets{list-style:none;margin-top:.35rem}
-        .earlier-bullets li{position:relative;padding-left:1.1rem;font-size:.8rem;color:var(--text-muted);line-height:1.5;margin-bottom:.2rem}
-        .earlier-bullets li::before{content:'';position:absolute;left:0;top:.5em;width:4px;height:4px;background:var(--text-dim);border-radius:1px;transform:rotate(45deg)}
+        .earlier-item-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:.15rem}
+        .earlier-title{font-weight:700;font-size:.78rem}
+        .earlier-company{font-size:.68rem;color:var(--text-muted)}
+        .earlier-year{font-family:var(--mono);font-size:.66rem;color:var(--text-muted)}
+        .earlier-bullets{list-style:none;margin-top:.1rem}
+        .earlier-bullets li{position:relative;padding-left:1rem;font-size:.72rem;color:var(--text-muted);line-height:1.42;margin-bottom:.1rem}
+        .earlier-bullets li::before{content:'';position:absolute;left:0;top:.42em;width:3px;height:3px;background:var(--text-dim);border-radius:1px;transform:rotate(45deg)}
 
         /* Edge */
-        .edge-section{border-top:1px solid var(--border);border-bottom:1px solid var(--border);position:relative}
-        .edge-section::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent,var(--accent-dim),transparent);pointer-events:none}
-        .edge-intro{max-width:660px;font-size:.98rem;color:var(--text-secondary);line-height:1.8;margin-bottom:2.5rem}
-        .edge-intro strong{color:var(--text-main)}
-        .edge-intro em{color:var(--accent);font-style:normal;font-weight:600}
-        .edge-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.9rem}
-        .edge-point{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-md);padding:1.3rem 1.4rem;transition:all .3s var(--ease);display:flex;gap:.9rem;align-items:flex-start}
-        .edge-point:hover{border-color:var(--accent-border);transform:translateY(-3px);box-shadow:0 15px 40px -12px rgba(0,0,0,.18)}
-        .edge-point-icon{min-width:36px;height:36px;background:var(--accent-dim);border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;color:var(--accent);flex-shrink:0;transition:all .3s var(--ease)}
+        .edge-grid{display:grid;grid-template-columns:1fr;gap:.55rem}
+        .edge-point{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-md);padding:.9rem 1rem;transition:all .3s var(--ease);display:flex;gap:.7rem;align-items:flex-start}
+        .edge-point:hover{border-color:var(--accent-border);transform:translateY(-2px);box-shadow:0 10px 25px -8px rgba(0,0,0,.15)}
+        .edge-point-icon{min-width:30px;height:30px;background:var(--accent-dim);border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;color:var(--accent);flex-shrink:0;transition:all .3s var(--ease)}
         .edge-point:hover .edge-point-icon{background:var(--accent);color:#fff}
-        .edge-point h4{font-size:.92rem;font-weight:700;margin-bottom:.25rem}
-        .edge-point p{font-size:.82rem;color:var(--text-muted);line-height:1.55}
+        .edge-point h4{font-size:.82rem;font-weight:700;margin-bottom:.12rem}
+        .edge-point p{font-size:.74rem;color:var(--text-muted);line-height:1.45}
 
         /* Skills */
-        .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
-        .skill-box{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:1.8rem;transition:all .3s var(--ease)}
-        .skill-box:hover{border-color:var(--border-hover);transform:translateY(-3px)}
-        .skill-top{display:flex;align-items:center;gap:.7rem;margin-bottom:1rem}
-        .skill-icon{width:36px;height:36px;background:var(--accent-dim);color:var(--accent);border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;transition:all .3s}
+        .skills-grid{display:grid;grid-template-columns:1fr;gap:.55rem}
+        .skill-box{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:1.1rem 1.2rem;transition:all .3s var(--ease)}
+        .skill-box:hover{border-color:var(--border-hover);transform:translateY(-2px)}
+        .skill-top{display:flex;align-items:center;gap:.55rem;margin-bottom:.6rem}
+        .skill-icon{width:30px;height:30px;background:var(--accent-dim);color:var(--accent);border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;transition:all .3s}
         .skill-box:hover .skill-icon{background:var(--accent);color:#fff}
-        .skill-top h3{font-size:.95rem;font-weight:700}
-        .skill-tags{display:flex;flex-wrap:wrap;gap:.4rem}
-        .skill-tag{padding:.35rem .75rem;background:var(--bg);border:1px solid var(--border);border-radius:6px;font-size:.77rem;color:var(--text-secondary);font-weight:500;transition:all .2s var(--ease)}
+        .skill-top h3{font-size:.85rem;font-weight:700}
+        .skill-tags{display:flex;flex-wrap:wrap;gap:.25rem}
+        .skill-tag{padding:.22rem .55rem;background:var(--bg);border:1px solid var(--border);border-radius:5px;font-size:.68rem;color:var(--text-secondary);font-weight:500;transition:all .2s var(--ease)}
         .skill-tag:hover{color:var(--text-main);border-color:var(--accent-border);background:var(--accent-dim)}
 
-        /* Projects */
-        .project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
-        .project-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:1.6rem;display:flex;flex-direction:column;justify-content:space-between;transition:all .4s var(--ease);position:relative;overflow:hidden}
+        /* Projects — FULL WIDTH */
+        .projects-row{padding:3.5rem 0 0;border-bottom:none}
+        .project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
+        .project-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:1.5rem;display:flex;flex-direction:column;justify-content:space-between;transition:all .4s var(--ease);position:relative;overflow:hidden}
         .project-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--accent);transform:scaleX(0);transition:transform .4s var(--ease);transform-origin:left}
-        .project-card:hover{border-color:var(--border-hover);transform:translateY(-4px);box-shadow:0 20px 40px -12px rgba(0,0,0,.25)}
+        .project-card:hover{border-color:var(--border-hover);transform:translateY(-3px);box-shadow:0 15px 35px -10px rgba(0,0,0,.2)}
         .project-card:hover::after{transform:scaleX(1)}
         .project-card.featured{border-color:var(--accent-border);background:linear-gradient(135deg,var(--bg-card),var(--accent-dim))}
-        .project-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.8rem}
-        .project-icon-wrap{width:42px;height:42px;background:var(--accent-dim);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;color:var(--accent)}
-        .project-badge{font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:.25rem .6rem;border-radius:100px;background:var(--green-dim);color:var(--green);border:1px solid rgba(34,197,94,.2)}
+        .project-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.6rem}
+        .project-icon-wrap{width:40px;height:40px;background:var(--accent-dim);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;color:var(--accent)}
+        .project-badge{font-size:.56rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:.18rem .5rem;border-radius:100px;background:var(--green-dim);color:var(--green);border:1px solid rgba(34,197,94,.2)}
         .project-badge.os{background:rgba(168,85,247,.1);color:var(--purple);border-color:rgba(168,85,247,.2)}
         .project-badge.testing{background:var(--yellow-dim);color:var(--yellow);border-color:rgba(251,191,36,.2)}
-        .project-name{font-size:1.08rem;font-weight:700;margin-bottom:.35rem}
-        .project-desc{font-size:.83rem;color:var(--text-secondary);line-height:1.55;margin-bottom:1rem;flex-grow:1}
-        .project-tech{display:flex;flex-wrap:wrap;gap:.25rem;margin-bottom:.9rem}
-        .project-tech span{font-size:.65rem;padding:.15rem .5rem;border-radius:4px;background:var(--accent-dim);color:var(--accent);font-weight:600;font-family:var(--mono)}
-        .project-links{display:flex;gap:.8rem;align-items:center}
-        .project-link{display:inline-flex;align-items:center;gap:.4rem;font-size:.82rem;font-weight:600;color:var(--text-main);text-decoration:none;transition:all .3s}
-        .project-link:hover{color:var(--accent);gap:.65rem}
+        .project-name{font-size:1rem;font-weight:700;margin-bottom:.25rem}
+        .project-desc{font-size:.8rem;color:var(--text-secondary);line-height:1.5;margin-bottom:.75rem;flex-grow:1}
+        .project-tech{display:flex;flex-wrap:wrap;gap:.2rem;margin-bottom:.7rem}
+        .project-tech span{font-size:.6rem;padding:.1rem .4rem;border-radius:4px;background:var(--accent-dim);color:var(--accent);font-weight:600;font-family:var(--mono)}
+        .project-links{display:flex;gap:.6rem;align-items:center}
+        .project-link{display:inline-flex;align-items:center;gap:.3rem;font-size:.76rem;font-weight:600;color:var(--text-main);text-decoration:none;transition:all .3s}
+        .project-link:hover{color:var(--accent);gap:.5rem}
         .project-link.secondary{color:var(--text-muted);font-weight:500}
         .project-link.secondary:hover{color:var(--text-secondary)}
 
         /* Contact */
-        .contact-section{padding-bottom:3rem}
-        .contact-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-xl);padding:4.5rem 2rem;text-align:center;position:relative;overflow:hidden}
+        .contact-section{padding:4.5rem 0 2.5rem}
+        .contact-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-xl);padding:4rem 2rem;text-align:center;position:relative;overflow:hidden}
         .contact-card::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at center,var(--accent-glow) 0%,transparent 50%);pointer-events:none;opacity:.3}
         .contact-inner{position:relative;z-index:2;max-width:560px;margin:0 auto}
         .contact-title{font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:800;letter-spacing:-.03em;margin-bottom:.9rem}
@@ -241,45 +210,41 @@
         .contact-socials{display:flex;justify-content:center;gap:.7rem;margin-top:2rem}
         .social-btn{width:48px;height:48px;border-radius:var(--r-md);border:1px solid var(--border);background:var(--bg);display:inline-flex;align-items:center;justify-content:center;text-decoration:none;transition:all .3s var(--ease)}
         .social-btn .ico-svg{width:20px;height:20px;display:block}
-        .social-btn .ico-svg path,.social-btn .ico-svg polyline,.social-btn .ico-svg line,.social-btn .ico-svg circle,.social-btn .ico-svg rect,.social-btn .ico-svg polygon{stroke:var(--text-secondary);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:stroke .3s var(--ease)}
-        .social-btn:hover .ico-svg path,.social-btn:hover .ico-svg polyline,.social-btn:hover .ico-svg line,.social-btn:hover .ico-svg circle,.social-btn:hover .ico-svg rect,.social-btn:hover .ico-svg polygon{stroke:var(--accent)}
+        .social-btn .ico-svg path,.social-btn .ico-svg rect,.social-btn .ico-svg circle{stroke:var(--text-secondary);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:stroke .3s var(--ease)}
+        .social-btn:hover .ico-svg path,.social-btn:hover .ico-svg rect,.social-btn:hover .ico-svg circle{stroke:var(--accent)}
         .social-btn:hover{border-color:var(--accent-border);transform:translateY(-3px);box-shadow:0 8px 20px -5px var(--accent-glow)}
         .contact-info{margin-top:1.2rem;font-size:.78rem;color:var(--text-dim);font-family:var(--mono)}
 
-        /* Footer */
-        footer{border-top:1px solid var(--border);padding:1.5rem 0}
+        footer{border-top:1px solid var(--border);padding:1.3rem 0}
         .footer-inner{display:flex;justify-content:space-between;align-items:center;font-size:.78rem;color:var(--text-muted)}
 
-        /* Reveal */
-        .reveal{opacity:0;transform:translateY(30px);transition:all .8s var(--ease)}
-        .reveal.active{opacity:1;transform:translateY(0)}
-        .reveal-d1{transition-delay:.1s}.reveal-d2{transition-delay:.2s}.reveal-d3{transition-delay:.3s}
-
+        .reveal{opacity:0;transform:translateY(25px);transition:all .7s var(--ease)}.reveal.active{opacity:1;transform:translateY(0)}
+        .reveal-d1{transition-delay:.1s}.reveal-d2{transition-delay:.15s}.reveal-d3{transition-delay:.2s}
         @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
         @keyframes pingDot{0%{transform:scale(1);opacity:1}75%,100%{transform:scale(2.5);opacity:0}}
         @keyframes cursorBlink{0%,100%{border-color:var(--accent)}50%{border-color:transparent}}
 
-        @media(max-width:1024px){.exp-card{grid-template-columns:140px 1fr;gap:1.5rem}}
+        @media(max-width:900px){
+            .dual-grid{grid-template-columns:1fr;gap:0}.dual-col::after{display:none}.dual-col{padding:0}
+            .dual-row{padding:3rem 0}.projects-row{padding:3rem 0 0}
+            .project-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+        }
         @media(max-width:768px){
-            .container{padding:0 1.25rem}nav{padding:.75rem 1.25rem}
+            .container,.container-wide{padding:0 1.25rem}nav{padding:.75rem 1.25rem}
             .nav-center{display:none}.btn-hire{display:none}.nav-toggle{display:flex}
             .mobile-overlay{padding:5rem 1.25rem 2rem}.mobile-close{right:1.25rem;top:.75rem}
             .hero{padding:6rem 0 2.5rem}.hero-name{font-size:2.6rem}
             .hero-stats{flex-wrap:wrap;gap:.3rem}.hero-stat{padding:.5rem 1rem}
             .hero-stat-divider{display:none}.hero-stat-value{font-size:1.35rem}
-            section{padding:4.5rem 0}.section-header{margin-bottom:2.5rem}
-            .exp-card{grid-template-columns:1fr;gap:.5rem;padding:1.5rem}
-            .exp-date-section{display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
-            .edge-grid{grid-template-columns:1fr}.skills-grid{grid-template-columns:1fr}
-            .project-grid{grid-template-columns:1fr}.contact-title{font-size:1.8rem}
+            .dual-row{padding:2.5rem 0}.contact-title{font-size:1.8rem}
             .footer-inner{flex-direction:column;gap:.4rem;text-align:center}
             .cursor-dot,.cursor-ring{display:none!important}
             .nav-right{gap:.35rem}.theme-toggle{width:34px;height:34px}
-            .earlier-toggle{padding:1rem 1.5rem}.earlier-inner{padding:0 1.5rem 1rem}
+            .earlier-toggle{padding:.7rem 1rem}.earlier-inner{padding:0 1rem .7rem}
+            .project-grid{grid-template-columns:1fr}
         }
         @media(max-width:480px){
-            .hero-stat{padding:.4rem .7rem}.hero-stat-value{font-size:1.2rem}
-            .hero-stat-label{font-size:.65rem}
+            .hero-stat{padding:.4rem .7rem}.hero-stat-value{font-size:1.2rem}.hero-stat-label{font-size:.65rem}
             .trusted-logos{gap:.4rem}.trusted-item{font-size:.72rem;padding:.3rem .6rem}
         }
     </style>
@@ -301,19 +266,18 @@
 </div>
 
 <nav id="navbar">
-    <a href="#" class="nav-logo" aria-label="Home"><div class="logo-canvas"><div class="logo-ring"></div><div class="logo-ring-inner"></div><div class="logo-letter">S</div></div></a>
-    <div class="nav-center">
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#edge" class="nav-link">The Edge</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#projects" class="nav-link">Projects</a>
-    </div>
+    <a href="#" class="nav-logo" aria-label="Home">
+        <div class="logo-canvas">
+            <div class="logo-ring-outer"></div>
+            <div class="logo-ring-mid"></div>
+            <div class="logo-ring-inner"></div>
+            <div class="logo-center-dot"></div>
+        </div>
+    </a>
+    <div class="nav-center"><a href="#experience" class="nav-link">Experience</a><a href="#edge" class="nav-link">The Edge</a><a href="#skills" class="nav-link">Skills</a><a href="#projects" class="nav-link">Projects</a></div>
     <div class="nav-right">
         <a href="mailto:Sameerkhan15aug@outlook.com" class="btn-hire"><svg class="ico-sm" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>Let's Talk</a>
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-            <svg class="ico-xl icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-            <svg class="ico-xl icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><svg class="ico-xl icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="ico-xl icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
         <button class="nav-toggle" id="navToggle" aria-label="Menu"><svg class="ico" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
     </div>
 </nav>
@@ -327,12 +291,9 @@
         <p class="hero-role"><span class="typewriter-text" id="typewriter"></span></p>
         <p class="hero-desc"><strong>5+ years</strong> building high-performing engineering teams for <strong>Fortune 500 companies</strong> and fast-growing startups across the US &amp; India. I own the full recruitment lifecycle — sourcing, technical screening, and offer negotiation — with the technical fluency to evaluate candidates the way engineering managers do.</p>
         <div class="hero-stats">
-            <div class="hero-stat"><span class="hero-stat-value" data-count="5" data-suffix="+">0</span><span class="hero-stat-label">Years Experience</span></div>
-            <div class="hero-stat-divider"></div>
-            <div class="hero-stat"><span class="hero-stat-value" data-count="50" data-suffix="+">0</span><span class="hero-stat-label">Roles Closed</span></div>
-            <div class="hero-stat-divider"></div>
-            <div class="hero-stat"><span class="hero-stat-value" data-count="95" data-suffix="%">0</span><span class="hero-stat-label">Offer Acceptance</span></div>
-            <div class="hero-stat-divider"></div>
+            <div class="hero-stat"><span class="hero-stat-value" data-count="5" data-suffix="+">0</span><span class="hero-stat-label">Years Experience</span></div><div class="hero-stat-divider"></div>
+            <div class="hero-stat"><span class="hero-stat-value" data-count="50" data-suffix="+">0</span><span class="hero-stat-label">Roles Closed</span></div><div class="hero-stat-divider"></div>
+            <div class="hero-stat"><span class="hero-stat-value" data-count="95" data-suffix="%">0</span><span class="hero-stat-label">Offer Acceptance</span></div><div class="hero-stat-divider"></div>
             <div class="hero-stat"><span class="hero-stat-value" data-count="6">0</span><span class="hero-stat-label">Enterprise Clients</span></div>
         </div>
         <div class="hero-actions">
@@ -353,221 +314,137 @@
     </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section id="experience">
-    <div class="container">
-        <div class="section-header reveal">
-            <div class="section-tag">Experience</div>
-            <h2 class="section-title">Where I've <span class="serif-i">Built Teams</span>.</h2>
-            <p class="section-subtitle">A proven track record of scaling engineering teams, closing mission-critical hires, and delivering measurable recruiting impact for some of the world's most demanding organizations.</p>
-        </div>
-        <div class="timeline">
-            <div class="exp-card reveal">
-                <div class="exp-date-section">
-                    <span class="exp-current"><span class="current-dot"></span> Current</span>
-                    <div class="exp-dates">Apr 2024 —<br>Present</div>
-                    <div class="exp-location"><svg class="ico-xs" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>India</div>
-                </div>
-                <div>
-                    <h3 class="exp-role-title">Senior Technical Recruiter / Lead</h3>
-                    <p class="exp-company-name">TechCarrel LLP — Startup</p>
-                    <ul class="exp-bullets">
-                        <li>Leading full-cycle technical hiring for AI, data, and engineering teams powering India's next wave of high-growth startups.</li>
-                        <li>Architected AI-first recruiting pipelines for Generative AI, LLM, Python, and Full Stack roles — slashing time-to-hire by 30% through sharper calibration at the intake stage.</li>
-                        <li>Serving as a strategic hiring partner to founders and CTOs, translating product roadmaps into precise headcount targets and team composition plans.</li>
-                        <li>Conducting rigorous technical interviews to validate proficiency in LLMs, NLP, and distributed systems — consistently filtering out false positives before they reach the team.</li>
-                        <li>Built and mentored a team of recruiters on structured sourcing frameworks, technical evaluation rubrics, and candidate experience best practices.</li>
-                        <li>Running hands-on technical assessments across frontend, full stack, Python, AI/ML, and cloud roles to ensure every hire is a genuine match for the team's technical bar.</li>
-                    </ul>
-                    <div class="chip-row"><span class="chip">AI/ML Hiring</span><span class="chip">Team Leadership</span><span class="chip">Startup Hiring</span><span class="chip">Technical Interviews</span><span class="chip">Pipeline Architecture</span></div>
-                </div>
-            </div>
+<!-- DUAL ROW: [Edge + Arsenal] (left) | Experience (right) -->
+<div class="dual-row">
+    <div class="container-wide">
+        <div class="dual-grid">
 
-            <div class="exp-card reveal">
-                <div class="exp-date-section">
-                    <div class="exp-dates">May 2022 —<br>Sep 2023</div>
-                    <div class="exp-location"><svg class="ico-xs" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>US Market</div>
+            <!-- LEFT: The Edge + Arsenal stacked -->
+            <div class="dual-col" id="left-stack">
+                <!-- THE EDGE -->
+                <div id="edge">
+                    <div class="section-header reveal">
+                        <div class="section-tag">The Edge</div>
+                        <h2 class="section-title">Why Hiring Managers <span class="serif-i text-accent">Trust My Screens</span>.</h2>
+                        <p class="section-subtitle">Most recruiters match keywords. I understand the technology — because I've built systems myself.</p>
+                    </div>
+                    <div class="edge-grid">
+                        <div class="edge-point reveal reveal-d1"><div class="edge-point-icon"><svg class="ico-sm" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><div><h4>I Understand What I Recruit</h4><p>Built production apps with React, Next.js, and Python. I speak engineering — no translation needed.</p></div></div>
+                        <div class="edge-point reveal reveal-d2"><div class="edge-point-icon"><svg class="ico-sm" viewBox="0 0 24 24"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg></div><div><h4>GitHub-First Screening</h4><p>Code quality, contribution patterns, architecture — reviewed before the first call.</p></div></div>
+                        <div class="edge-point reveal reveal-d1"><div class="edge-point-icon"><svg class="ico-sm" viewBox="0 0 24 24"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg></div><div><h4>AI-Powered Efficiency</h4><p>Smart sourcing and automation — modern tooling that moves fast without losing the human touch.</p></div></div>
+                        <div class="edge-point reveal reveal-d2"><div class="edge-point-icon"><svg class="ico-sm" viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z"/><path d="M3.2 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.3"/></svg></div><div><h4>Developer Empathy</h4><p>I've shipped code and debugged production. That experience leads to sharper evaluations.</p></div></div>
+                    </div>
                 </div>
-                <div>
-                    <h3 class="exp-role-title">Senior Technical Recruiter</h3>
-                    <p class="exp-company-name">Intelliswift Software, Inc.</p>
-                    <ul class="exp-bullets">
-                        <li>Managed full-cycle recruiting for complex technical roles across BFSI, fintech, pharma, and enterprise SaaS — often under aggressive delivery timelines and strict compliance requirements.</li>
-                        <li>Served as the primary hiring partner for <strong>Meta, Experian, SVB, Liberty Mutual, Raymond James, and the Federal Reserve Bank</strong> — consistently meeting SLA targets across all six accounts.</li>
-                        <li>Placed Full Stack Developers, Software Engineers, Data Consultants, Cybersecurity Specialists, and QA Engineers across W2 and C2H models.</li>
-                        <li>Designed and delivered structured interview frameworks — behavioral, logical, and problem-solving — to rigorously assess communication, commitment, and cultural alignment.</li>
-                        <li>Leveraged SQL and recruitment analytics to track source quality, interview-to-offer conversion, and time-to-hire — driving quarterly funnel improvements.</li>
-                        <li>Built and nurtured high-velocity candidate pipelines using LinkedIn Recruiter, JobDiva, and Crintell ATS across concurrent requisitions.</li>
-                    </ul>
-                    <div class="chip-row" style="margin-bottom:.7rem"><span class="chip">Enterprise Clients</span><span class="chip">SQL Analytics</span><span class="chip">BFSI Vertical</span><span class="chip">Fieldglass / Beeline</span><span class="chip">High-Volume Hiring</span></div>
-                    <div class="clients-served">
-                        <div class="clients-label">Key Clients</div>
-                        <div class="client-tags"><span class="client-tag">Meta</span><span class="client-tag">Silicon Valley Bank</span><span class="client-tag">Experian</span><span class="client-tag">Federal Reserve Bank</span><span class="client-tag">Liberty Mutual</span><span class="client-tag">Raymond James</span></div>
+
+                <!-- Divider -->
+                <hr class="section-divider">
+
+                <!-- ARSENAL -->
+                <div id="skills">
+                    <div class="section-header reveal">
+                        <div class="section-tag">Arsenal</div>
+                        <h2 class="section-title">Technical <span class="serif-i">Competencies</span>.</h2>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-box reveal reveal-d1"><div class="skill-top"><div class="skill-icon"><svg class="ico-sm" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><h3>Recruitment</h3></div><div class="skill-tags"><span class="skill-tag">Full-Cycle</span><span class="skill-tag">LinkedIn Recruiter</span><span class="skill-tag">JobDiva / Ceipal</span><span class="skill-tag">Fieldglass / Beeline</span><span class="skill-tag">W2 / C2H / C2C</span><span class="skill-tag">Boolean & X-Ray</span><span class="skill-tag">Market Mapping</span><span class="skill-tag">Salary Benchmarking</span><span class="skill-tag">US Immigration</span></div></div>
+                        <div class="skill-box reveal reveal-d2"><div class="skill-top"><div class="skill-icon"><svg class="ico-sm" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><h3>Technical Knowledge</h3></div><div class="skill-tags"><span class="skill-tag">React / Next.js</span><span class="skill-tag">Node.js</span><span class="skill-tag">Python</span><span class="skill-tag">C++</span><span class="skill-tag">TypeScript</span><span class="skill-tag">Git / GitHub</span><span class="skill-tag">System Design</span><span class="skill-tag">CI/CD</span></div></div>
+                        <div class="skill-box reveal reveal-d1"><div class="skill-top"><div class="skill-icon"><svg class="ico-sm" viewBox="0 0 24 24"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg></div><h3>AI & Automation</h3></div><div class="skill-tags"><span class="skill-tag">GPT / Claude / DeepSeek</span><span class="skill-tag">Perplexity</span><span class="skill-tag">Cursor AI</span><span class="skill-tag">Ollama</span><span class="skill-tag">N8N</span><span class="skill-tag">Prompt Engineering</span></div></div>
+                        <div class="skill-box reveal reveal-d2"><div class="skill-top"><div class="skill-icon"><svg class="ico-sm" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div><h3>Analytics</h3></div><div class="skill-tags"><span class="skill-tag">SQL</span><span class="skill-tag">Power BI</span><span class="skill-tag">DAX</span><span class="skill-tag">Excel</span><span class="skill-tag">Funnel Analytics</span><span class="skill-tag">Hiring Dashboards</span></div></div>
+                        <div class="skill-box reveal reveal-d1" style="grid-column:1/-1"><div class="skill-top"><div class="skill-icon"><svg class="ico-sm" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 6.5 3 12 0v-5"/></svg></div><h3>Education & Certifications</h3></div><div class="skill-tags"><span class="skill-tag">BCA — Computer Applications (2020)</span><span class="skill-tag">LinkedIn Recruiter — Certified</span><span class="skill-tag">Cisco Cybersecurity</span><span class="skill-tag">Data Analysis — Mentorness</span></div></div>
                     </div>
                 </div>
             </div>
 
-            <div class="exp-card reveal">
-                <div class="exp-date-section">
-                    <div class="exp-dates">Dec 2020 —<br>May 2022</div>
-                    <div class="exp-location"><svg class="ico-xs" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>US Market</div>
+            <!-- RIGHT: Experience -->
+            <div class="dual-col" id="experience">
+                <div class="section-header reveal">
+                    <div class="section-tag">Experience</div>
+                    <h2 class="section-title">Where I've <span class="serif-i">Built Teams</span>.</h2>
                 </div>
-                <div>
-                    <h3 class="exp-role-title">Senior Technical Recruiter</h3>
-                    <p class="exp-company-name">Amor System LLC</p>
-                    <ul class="exp-bullets">
-                        <li>Owned end-to-end technical hiring — from sourcing and screening to interview coordination, offer negotiation, and onboarding — for both contract and permanent technology roles.</li>
-                        <li>Built high-quality candidate pipelines through LinkedIn, niche job boards, referrals, and targeted direct sourcing in highly competitive US tech markets.</li>
-                        <li>Sustained consistently strong candidate engagement throughout the hiring funnel, resulting in elevated offer acceptance rates and reduced last-minute drop-offs.</li>
-                        <li>Tracked and optimized key hiring KPIs — time-to-fill, cost-per-hire, and pipeline velocity — using ATS reporting and manual dashboards to inform weekly strategy.</li>
-                        <li>Mastered advanced Boolean search, X-ray sourcing, and LinkedIn Recruiter techniques to uncover passive talent that most agencies overlook.</li>
-                    </ul>
-                    <div class="chip-row"><span class="chip">Full-Cycle Recruiting</span><span class="chip">Boolean Mastery</span><span class="chip">JobDiva ATS</span><span class="chip">Pipeline Strategy</span><span class="chip">US Immigration</span></div>
-                </div>
-            </div>
+                <div class="timeline">
+                    <div class="exp-card reveal">
+                        <div class="exp-meta"><span class="exp-current"><span class="current-dot"></span> Current</span><span class="exp-dates">Apr 2024 — Present</span></div>
+                        <h3 class="exp-role-title">Senior Technical Recruiter / Lead</h3>
+                        <p class="exp-company-name">TechCarrel LLP — Startup</p>
+                        <ul class="exp-bullets">
+                            <li>Leading full-cycle technical hiring for AI, data, and engineering teams powering high-growth startups across India.</li>
+                            <li>Architected AI-first recruiting pipelines for Generative AI, LLM, Python, and Full Stack — reducing time-to-hire by 30%.</li>
+                            <li>Strategic hiring partner to founders and CTOs — translating product roadmaps into precise headcount targets.</li>
+                            <li>Conducting rigorous technical interviews to validate proficiency in LLMs, NLP, and distributed systems.</li>
+                            <li>Built and mentored a team of recruiters on structured sourcing frameworks and evaluation rubrics.</li>
+                        </ul>
+                        <div class="chip-row"><span class="chip">AI/ML Hiring</span><span class="chip">Team Leadership</span><span class="chip">Startup</span><span class="chip">Pipeline Architecture</span></div>
+                    </div>
 
-            <div class="earlier-roles reveal">
-                <button class="earlier-toggle" id="earlierToggle">
-                    <span class="earlier-header">Earlier Experience</span>
-                    <span class="earlier-chevron" id="earlierChevron"><svg class="ico-sm" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
-                </button>
-                <div class="earlier-content" id="earlierContent">
-                    <div class="earlier-inner">
-                        <div class="earlier-item">
-                            <div>
-                                <div class="earlier-title">Sales & Marketing Specialist</div>
-                                <div class="earlier-company">Artius Inc.</div>
-                                <ul class="earlier-bullets"><li>Drove international marketing and sales of IT solutions across multiple markets.</li><li>Consistently exceeded quarterly sales targets through strategic client relationship management.</li></ul>
+                    <div class="exp-card reveal">
+                        <div class="exp-meta"><span class="exp-dates">May 2022 — Sep 2023</span></div>
+                        <h3 class="exp-role-title">Senior Technical Recruiter</h3>
+                        <p class="exp-company-name">Intelliswift Software, Inc.</p>
+                        <ul class="exp-bullets">
+                            <li>Primary hiring partner for <strong>Meta, Experian, SVB, Liberty Mutual, Raymond James, and Federal Reserve Bank</strong> — meeting SLA targets across all six accounts.</li>
+                            <li>Placed Full Stack, Data, Cybersecurity, and QA Engineers across W2 and C2H models under aggressive timelines.</li>
+                            <li>Leveraged SQL and recruitment analytics to track source quality and time-to-hire — driving quarterly improvements.</li>
+                        </ul>
+                        <div class="chip-row" style="margin-bottom:.4rem"><span class="chip">Enterprise</span><span class="chip">SQL Analytics</span><span class="chip">BFSI</span><span class="chip">High-Volume</span></div>
+                        <div class="clients-served"><div class="clients-label">Key Clients</div><div class="client-tags"><span class="client-tag">Meta</span><span class="client-tag">SVB</span><span class="client-tag">Experian</span><span class="client-tag">Fed Reserve</span><span class="client-tag">Liberty Mutual</span><span class="client-tag">Raymond James</span></div></div>
+                    </div>
+
+                    <div class="exp-card reveal">
+                        <div class="exp-meta"><span class="exp-dates">Dec 2020 — May 2022</span></div>
+                        <h3 class="exp-role-title">Senior Technical Recruiter</h3>
+                        <p class="exp-company-name">Amor System LLC</p>
+                        <ul class="exp-bullets">
+                            <li>Owned end-to-end technical hiring — sourcing, screening, offer negotiation, and onboarding for contract and permanent roles.</li>
+                            <li>Mastered advanced Boolean search, X-ray sourcing, and LinkedIn Recruiter to uncover passive talent competitors miss.</li>
+                            <li>Sustained high engagement throughout the funnel, driving elevated offer acceptance and minimal drop-offs.</li>
+                        </ul>
+                        <div class="chip-row"><span class="chip">Full-Cycle</span><span class="chip">Boolean Mastery</span><span class="chip">JobDiva</span><span class="chip">US Immigration</span></div>
+                    </div>
+
+                    <div class="earlier-roles reveal">
+                        <button class="earlier-toggle" id="earlierToggle"><span class="earlier-header">Earlier Experience</span><span class="earlier-chevron" id="earlierChevron"><svg class="ico-sm" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+                        <div class="earlier-content" id="earlierContent">
+                            <div class="earlier-inner">
+                                <div class="earlier-item"><div class="earlier-item-header"><div><div class="earlier-title">Sales & Marketing Specialist</div><div class="earlier-company">Artius Inc.</div></div><div class="earlier-year">2019</div></div><ul class="earlier-bullets"><li>Drove international IT sales through strategic client relationships.</li></ul></div>
+                                <div class="earlier-item"><div class="earlier-item-header"><div><div class="earlier-title">Medical Data Consultant</div><div class="earlier-company">Eugenix Hair Transplant Sciences</div></div><div class="earlier-year">2018</div></div><ul class="earlier-bullets"><li>Optimized lead generation through data analysis and process refinement.</li></ul></div>
                             </div>
-                            <div class="earlier-year">Feb 2019 —<br>Jul 2019</div>
-                        </div>
-                        <div class="earlier-item">
-                            <div>
-                                <div class="earlier-title">Medical Data Consultant</div>
-                                <div class="earlier-company">Eugenix Hair Transplant Sciences</div>
-                                <ul class="earlier-bullets"><li>Optimized lead generation funnels through rigorous data analysis and strategic process refinement.</li><li>Produced actionable reports identifying conversion bottlenecks and scalable growth opportunities.</li></ul>
-                            </div>
-                            <div class="earlier-year">Jan 2018 —<br>Jan 2019</div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
-</section>
+</div>
 
-<!-- THE EDGE -->
-<section id="edge" class="edge-section">
-    <div class="container">
-        <div class="section-header reveal">
-            <div class="section-tag">The Edge</div>
-            <h2 class="section-title">Why Hiring Managers <span class="serif-i text-accent">Trust My Screens</span>.</h2>
-        </div>
-        <p class="edge-intro reveal">Most recruiters match keywords. I <em>understand the technology</em>. When a hiring manager says they need someone who can "design distributed microservices," I know exactly what that means — because <strong>I've built systems myself</strong>. This technical fluency makes every screen sharper, every shortlist stronger, and every hire more likely to stick.</p>
-        <div class="edge-grid">
-            <div class="edge-point reveal reveal-d1">
-                <div class="edge-point-icon"><svg class="ico-sm" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-                <div><h4>I Understand What I Recruit</h4><p>I've built production applications with React, Next.js, and Python. I speak the same language as engineering teams — no translation needed.</p></div>
-            </div>
-            <div class="edge-point reveal reveal-d2">
-                <div class="edge-point-icon"><svg class="ico-sm" viewBox="0 0 24 24"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg></div>
-                <div><h4>GitHub-First Screening</h4><p>I review code quality, contribution cadence, and architecture choices before the first phone call. Every conversation starts from a place of informed context.</p></div>
-            </div>
-            <div class="edge-point reveal reveal-d1">
-                <div class="edge-point-icon"><svg class="ico-sm" viewBox="0 0 24 24"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg></div>
-                <div><h4>AI-Powered Efficiency</h4><p>Smart sourcing, automated workflows, and real-time market intelligence — I use modern tooling to move faster without ever sacrificing the human touch.</p></div>
-            </div>
-            <div class="edge-point reveal reveal-d2">
-                <div class="edge-point-icon"><svg class="ico-sm" viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z"/><path d="M3.2 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.3"/></svg></div>
-                <div><h4>Developer Empathy</h4><p>I've shipped code and debugged production at 2 AM. That firsthand experience leads to better candidate conversations and sharper, more accurate evaluations.</p></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-    <div class="container">
-        <div class="section-header reveal">
-            <div class="section-tag">Arsenal</div>
-            <h2 class="section-title">Technical <span class="serif-i">Competencies</span>.</h2>
-        </div>
-        <div class="skills-grid">
-            <div class="skill-box reveal reveal-d1">
-                <div class="skill-top"><div class="skill-icon"><svg class="ico-sm" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><h3>Recruitment</h3></div>
-                <div class="skill-tags"><span class="skill-tag">Full-Cycle Recruiting</span><span class="skill-tag">LinkedIn Recruiter</span><span class="skill-tag">JobDiva / Ceipal</span><span class="skill-tag">Fieldglass / Beeline</span><span class="skill-tag">W2 / C2H / C2C Models</span><span class="skill-tag">Boolean &amp; X-Ray Search</span><span class="skill-tag">Market Mapping</span><span class="skill-tag">Salary Benchmarking</span><span class="skill-tag">US Immigration (H1B/OPT)</span></div>
-            </div>
-            <div class="skill-box reveal reveal-d2">
-                <div class="skill-top"><div class="skill-icon"><svg class="ico-sm" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><h3>Technical Knowledge</h3></div>
-                <div class="skill-tags"><span class="skill-tag">React.js / Next.js</span><span class="skill-tag">Node.js / Express</span><span class="skill-tag">Python</span><span class="skill-tag">C++</span><span class="skill-tag">JavaScript / TypeScript</span><span class="skill-tag">Git / GitHub</span><span class="skill-tag">Firebase / Supabase</span><span class="skill-tag">REST APIs</span><span class="skill-tag">System Design</span><span class="skill-tag">CI/CD Concepts</span></div>
-            </div>
-            <div class="skill-box reveal reveal-d1">
-                <div class="skill-top"><div class="skill-icon"><svg class="ico-sm" viewBox="0 0 24 24"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg></div><h3>AI &amp; Automation</h3></div>
-                <div class="skill-tags"><span class="skill-tag">GPT / Claude / DeepSeek</span><span class="skill-tag">Perplexity</span><span class="skill-tag">Cursor AI</span><span class="skill-tag">Ollama / LM Studio</span><span class="skill-tag">N8N Workflows</span><span class="skill-tag">Prompt Engineering</span></div>
-            </div>
-            <div class="skill-box reveal reveal-d2">
-                <div class="skill-top"><div class="skill-icon"><svg class="ico-sm" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div><h3>Analytics &amp; Reporting</h3></div>
-                <div class="skill-tags"><span class="skill-tag">SQL</span><span class="skill-tag">Power BI</span><span class="skill-tag">DAX</span><span class="skill-tag">Advanced Excel</span><span class="skill-tag">Funnel Analytics</span><span class="skill-tag">Source Channel ROI</span><span class="skill-tag">Hiring Dashboards</span></div>
-            </div>
-            <div class="skill-box reveal reveal-d1" style="grid-column:1/-1">
-                <div class="skill-top"><div class="skill-icon"><svg class="ico-sm" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 6.5 3 12 0v-5"/></svg></div><h3>Education &amp; Certifications</h3></div>
-                <div class="skill-tags"><span class="skill-tag">BCA — Bachelor of Computer Applications (2020)</span><span class="skill-tag">LinkedIn Recruiter Assessment — Certified</span><span class="skill-tag">Cisco — Introduction to Cybersecurity</span><span class="skill-tag">Data Analysis — Mentorness</span></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-    <div class="container">
+<!-- SIDE PROJECTS — FULL WIDTH -->
+<div class="projects-row">
+    <div class="container-wide">
         <div class="section-header reveal">
             <div class="section-tag">Side Projects</div>
             <h2 class="section-title">Things I've <span class="serif-i">Built</span>.</h2>
-            <p class="section-subtitle">Proof that I don't just recruit engineers — I think and build like one. These side projects sharpen the technical depth I bring to every candidate evaluation.</p>
+            <p class="section-subtitle">Proof that I think and build like an engineer — not just recruit them.</p>
         </div>
         <div class="project-grid">
             <div class="project-card featured reveal reveal-d1">
-                <div>
-                    <div class="project-top"><div class="project-icon-wrap"><svg class="ico-lg" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><polyline points="16 2 12 6 8 2"/></svg></div><span class="project-badge os">Open Source</span></div>
-                    <h3 class="project-name">SkillShelf</h3>
-                    <p class="project-desc">Open-source Engineering Workbench delivering curated design blueprints for AI coding tools. Each Skill is a precision-crafted SKILL.md file — the visual genome your AI needs to build pixel-perfect interfaces.</p>
-                    <div class="project-tech"><span>Next.js</span><span>TypeScript</span><span>Tailwind</span><span>Supabase</span></div>
-                </div>
-                <div class="project-links">
-                    <a href="https://skillshelf-liart.vercel.app/" target="_blank" class="project-link">Live Demo <svg class="ico-sm" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
-                    <a href="https://github.com/Samyk000/skillshelf.git" target="_blank" class="project-link secondary"><svg class="ico-sm" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>Source</a>
-                </div>
+                <div><div class="project-top"><div class="project-icon-wrap"><svg class="ico-lg" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><polyline points="16 2 12 6 8 2"/></svg></div><span class="project-badge os">Open Source</span></div><h3 class="project-name">SkillShelf</h3><p class="project-desc">Open-source Engineering Workbench delivering curated design blueprints for AI coding tools — the visual genome your AI needs for pixel-perfect interfaces.</p><div class="project-tech"><span>Next.js</span><span>TypeScript</span><span>Tailwind</span><span>Supabase</span></div></div>
+                <div class="project-links"><a href="https://skillshelf-liart.vercel.app/" target="_blank" class="project-link">Live Demo <svg class="ico-sm" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a><a href="https://github.com/Samyk000/skillshelf.git" target="_blank" class="project-link secondary"><svg class="ico-sm" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>Source</a></div>
             </div>
             <div class="project-card reveal reveal-d2">
-                <div>
-                    <div class="project-top"><div class="project-icon-wrap"><svg class="ico-lg" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><span class="project-badge">Live</span></div>
-                    <h3 class="project-name">LinksVault</h3>
-                    <p class="project-desc">Secure digital asset manager with complete product ownership — domain registration, DNS configuration, Vercel deployment, and Supabase backend architecture.</p>
-                    <div class="project-tech"><span>Next.js</span><span>Supabase</span><span>Vercel</span></div>
-                </div>
+                <div><div class="project-top"><div class="project-icon-wrap"><svg class="ico-lg" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><span class="project-badge">Live</span></div><h3 class="project-name">LinksVault</h3><p class="project-desc">Secure digital asset manager — full product ownership from domain to deployment.</p><div class="project-tech"><span>Next.js</span><span>Supabase</span><span>Vercel</span></div></div>
                 <a href="https://www.linksvault.online" target="_blank" class="project-link">Visit Live <svg class="ico-sm" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
             </div>
             <div class="project-card reveal reveal-d3">
-                <div>
-                    <div class="project-top"><div class="project-icon-wrap"><svg class="ico-lg" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M4 12a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1"/><path d="M6 12v7a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-7"/><path d="M10 16h4"/></svg></div><span class="project-badge">Live</span></div>
-                    <h3 class="project-name">AstraAI</h3>
-                    <p class="project-desc">Experimental AI interface for unrestricted LLM interactions and capability boundary research.</p>
-                    <div class="project-tech"><span>React</span><span>AI APIs</span><span>GitHub Pages</span></div>
-                </div>
+                <div><div class="project-top"><div class="project-icon-wrap"><svg class="ico-lg" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M4 12a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1"/><path d="M6 12v7a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-7"/><path d="M10 16h4"/></svg></div><span class="project-badge">Live</span></div><h3 class="project-name">AstraAI</h3><p class="project-desc">Experimental AI interface for unrestricted LLM interactions and capability research.</p><div class="project-tech"><span>React</span><span>AI APIs</span><span>GitHub Pages</span></div></div>
                 <a href="https://samyk000.github.io/AstraAI-Uncensored-/" target="_blank" class="project-link">Try It <svg class="ico-sm" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
             </div>
             <div class="project-card reveal reveal-d1">
-                <div>
-                    <div class="project-top"><div class="project-icon-wrap"><svg class="ico-lg" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><span class="project-badge testing">Testing</span></div>
-                    <h3 class="project-name">TheJobHunter</h3>
-                    <p class="project-desc">Automated job aggregator that scrapes LinkedIn, Indeed, and Glassdoor into a unified, intelligent dashboard for smarter job search.</p>
-                    <div class="project-tech"><span>Python</span><span>Scraping</span><span>Next.js</span></div>
-                </div>
+                <div><div class="project-top"><div class="project-icon-wrap"><svg class="ico-lg" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><span class="project-badge testing">Testing</span></div><h3 class="project-name">TheJobHunter</h3><p class="project-desc">Automated job aggregator scraping LinkedIn, Indeed &amp; Glassdoor into one intelligent dashboard.</p><div class="project-tech"><span>Python</span><span>Scraping</span><span>Next.js</span></div></div>
                 <span class="project-link" style="opacity:.4;cursor:default">Testing Internally <svg class="ico-sm" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
             </div>
         </div>
     </div>
-</section>
+</div>
 
 <!-- CONTACT -->
 <section id="contact" class="contact-section">
@@ -588,284 +465,83 @@
     </div>
 </section>
 
-<footer>
-    <div class="container">
-        <div class="footer-inner">
-            <span>&copy; 2025 Sameer. All rights reserved.</span>
-            <span>Crafted with <span class="text-accent">Recruitment Intelligence</span></span>
-        </div>
-    </div>
-</footer>
+<footer><div class="container"><div class="footer-inner"><span>&copy; 2025 Sameer. All rights reserved.</span><span>Crafted with <span class="text-accent">Recruitment Intelligence</span></span></div></div></footer>
 
 <script>
-    // Theme
-    var html = document.documentElement;
-    var saved = localStorage.getItem('theme') || 'dark';
-    html.setAttribute('data-theme', saved);
-    document.getElementById('themeToggle').addEventListener('click', function() {
-        var next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-        html.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
-    });
+var html=document.documentElement,saved=localStorage.getItem('theme')||'dark';html.setAttribute('data-theme',saved);
+document.getElementById('themeToggle').addEventListener('click',function(){var n=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',n);localStorage.setItem('theme',n)});
+window.addEventListener('scroll',function(){document.getElementById('scrollProgress').style.width=(window.scrollY/(document.documentElement.scrollHeight-window.innerHeight))*100+'%'});
+var navEl=document.getElementById('navbar');window.addEventListener('scroll',function(){navEl.classList.toggle('scrolled',window.scrollY>50)});
+var mobNav=document.getElementById('mobileNav');document.getElementById('navToggle').addEventListener('click',function(){mobNav.classList.add('open')});document.getElementById('mobileClose').addEventListener('click',function(){mobNav.classList.remove('open')});function closeMobile(){mobNav.classList.remove('open')}
+document.getElementById('earlierToggle').addEventListener('click',function(){document.getElementById('earlierContent').classList.toggle('open');document.getElementById('earlierChevron').classList.toggle('open')});
+var roles=["Senior Technical Recruiter","Building Teams for Fortune 500","AI-Augmented Hiring Specialist","US & India Market Expert","5+ Years · 50+ Roles Closed"];
+var ri=0,ci=0,del=false,tw=document.getElementById('typewriter');function typewrite(){var c=roles[ri];tw.textContent=c.substring(0,ci);if(!del){ci++;if(ci>c.length){del=true;setTimeout(typewrite,2200);return}}else{ci--;if(ci===0){del=false;ri=(ri+1)%roles.length;setTimeout(typewrite,400);return}}setTimeout(typewrite,del?28:60)}typewrite();
+var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('active')})},{threshold:.06,rootMargin:'0px 0px -30px 0px'});document.querySelectorAll('.reveal').forEach(function(el){ro.observe(el)});
+var co=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&!e.target.dataset.counted){e.target.dataset.counted='true';var t=+e.target.dataset.count,s=e.target.dataset.suffix||'',c=0,inc=t/45;var iv=setInterval(function(){c+=inc;if(c>=t){c=t;clearInterval(iv)}e.target.textContent=Math.floor(c)+s},25)}})},{threshold:.5});document.querySelectorAll('[data-count]').forEach(function(el){co.observe(el)});
+var cd=document.getElementById('cursorDot'),cr=document.getElementById('cursorRing');if(window.matchMedia('(pointer:fine)').matches){document.addEventListener('mousemove',function(e){cd.style.left=e.clientX-3+'px';cd.style.top=e.clientY-3+'px';cr.style.left=e.clientX-18+'px';cr.style.top=e.clientY-18+'px'});document.querySelectorAll('a,button,.edge-point,.skill-tag,.project-card,.exp-card,.trusted-item,.social-btn').forEach(function(el){el.addEventListener('mouseenter',function(){cr.style.transform='scale(1.5)';cr.style.opacity='0.2'});el.addEventListener('mouseleave',function(){cr.style.transform='scale(1)';cr.style.opacity='0.4'})})}else{cd.style.display=cr.style.display='none'}
+document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var t=document.querySelector(this.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}})});
 
-    // Scroll progress
-    window.addEventListener('scroll', function() {
-        var p = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-        document.getElementById('scrollProgress').style.width = p + '%';
-    });
+// ====== VISIBLE + OPTIMIZED CANVAS ======
+(function(){var canvas=document.getElementById('trailCanvas');if(!canvas)return;var ctx=canvas.getContext('2d'),w=0,h=0,running=true,isM=window.innerWidth<768,PAD=55;
+var COLS=[[255,107,74],[168,85,247],[255,138,110],[196,130,255],[255,160,135]];
+function resize(){var hero=canvas.closest('.hero');w=hero.offsetWidth;h=hero.offsetHeight;canvas.width=w;canvas.height=h;
+for(var i=0;i<pts.length;i++){pts[i].x=Math.random()*w;pts[i].y=Math.random()*h;pts[i].hist=[];if(pts[i].t===2){pts[i].cx=pts[i].x;pts[i].cy=pts[i].y}}for(var j=0;j<stars.length;j++){stars[j].x=Math.random()*w;stars[j].y=Math.random()*h}}
+document.addEventListener('visibilitychange',function(){running=!document.hidden;if(running)lastT=performance.now()});
 
-    // Navbar
-    var navEl = document.getElementById('navbar');
-    window.addEventListener('scroll', function() {
-        navEl.classList.toggle('scrolled', window.scrollY > 50);
-    });
+// Trail particles — 32 desktop, 18 mobile
+var pts=[];var PC=isM?18:32;
+for(var i=0;i<PC;i++){var m=Math.random(),a=Math.random()*6.2832,sp=.1+Math.random()*.15;
+pts.push({x:Math.random()*1200,y:Math.random()*800,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp,hist:[],
+hLen:30+(Math.random()*25|0),col:COLS[Math.random()*5|0],lw:.6+Math.random()*.7,
+tipR:1.2+Math.random()*1,t:m<.45?0:m<.75?1:2,
+ph:Math.random()*6.2832,ps:.007+Math.random()*.01,wa:.15+Math.random()*.3,
+orbR:40+Math.random()*70,cx:0,cy:0,orbA:Math.random()*6.2832,orbS:.003+Math.random()*.005,
+mo:.4+Math.random()*.25})}
 
-    // Mobile nav
-    var mobileNav = document.getElementById('mobileNav');
-    document.getElementById('navToggle').addEventListener('click', function() { mobileNav.classList.add('open'); });
-    document.getElementById('mobileClose').addEventListener('click', function() { mobileNav.classList.remove('open'); });
-    function closeMobile() { mobileNav.classList.remove('open'); }
+// Stars — 20 desktop, 12 mobile
+var stars=[];var SC=isM?12:20;
+for(var s=0;s<SC;s++){stars.push({x:Math.random()*1200,y:Math.random()*800,r:.5+Math.random()*.8,
+ph:Math.random()*6.2832,sp:.012+Math.random()*.02,col:COLS[Math.random()*5|0]})}
 
-    // Earlier dropdown
-    document.getElementById('earlierToggle').addEventListener('click', function() {
-        document.getElementById('earlierContent').classList.toggle('open');
-        document.getElementById('earlierChevron').classList.toggle('open');
-    });
+resize();window.addEventListener('resize',resize);var lastT=performance.now();
 
-    // Typewriter
-    var roles = ["Senior Technical Recruiter","Building Teams for Fortune 500","AI-Augmented Hiring Specialist","US & India Market Expert","5+ Years · 50+ Roles Closed"];
-    var ri = 0, ci = 0, del = false;
-    var tw = document.getElementById('typewriter');
-    function typewrite() {
-        var c = roles[ri];
-        tw.textContent = c.substring(0, ci);
-        if (!del) { ci++; if (ci > c.length) { del = true; setTimeout(typewrite, 2200); return; } }
-        else { ci--; if (ci === 0) { del = false; ri = (ri + 1) % roles.length; setTimeout(typewrite, 400); return; } }
-        setTimeout(typewrite, del ? 28 : 60);
-    }
-    typewrite();
+function frame(now){requestAnimationFrame(frame);if(!running)return;var dt=(now-lastT)/16.667;if(dt>4)dt=4;lastT=now;ctx.clearRect(0,0,w,h);var dk=html.getAttribute('data-theme')==='dark';
 
-    // Reveal
-    var ro = new IntersectionObserver(function(es) {
-        es.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('active'); });
-    }, { threshold: 0.06, rootMargin: '0px 0px -30px 0px' });
-    document.querySelectorAll('.reveal').forEach(function(el) { ro.observe(el); });
+// Stars
+var sa=dk?.25:.38;
+for(var si=0;si<stars.length;si++){var st=stars[si];st.ph+=st.sp*dt;var op=(Math.sin(st.ph)*.5+.5)*sa;if(op<.03)continue;
+ctx.globalAlpha=op;ctx.fillStyle='rgb('+st.col[0]+','+st.col[1]+','+st.col[2]+')';ctx.beginPath();ctx.arc(st.x,st.y,st.r,0,6.2832);ctx.fill()}
 
-    // Count
-    var co = new IntersectionObserver(function(es) {
-        es.forEach(function(e) {
-            if (e.isIntersecting && !e.target.dataset.counted) {
-                e.target.dataset.counted = 'true';
-                var t = +e.target.dataset.count, s = e.target.dataset.suffix || '', c = 0, inc = t / 45;
-                var iv = setInterval(function() {
-                    c += inc;
-                    if (c >= t) { c = t; clearInterval(iv); }
-                    e.target.textContent = Math.floor(c) + s;
-                }, 25);
-            }
-        });
-    }, { threshold: 0.5 });
-    document.querySelectorAll('[data-count]').forEach(function(el) { co.observe(el); });
+// Trails
+for(var pi=0;pi<pts.length;pi++){var p=pts[pi];p.ph+=p.ps*dt;
+if(p.t===0){p.x+=(p.vx+Math.sin(p.ph)*p.wa*.3)*dt;p.y+=(p.vy+Math.cos(p.ph*.7+1.3)*p.wa*.2)*dt}
+else if(p.t===1){p.x+=p.vx*dt;p.y+=(Math.sin(p.ph)*p.wa*.4+p.vy*.3)*dt}
+else{p.orbA+=p.orbS*dt;p.x=p.cx+Math.cos(p.orbA)*p.orbR;p.y=p.cy+Math.sin(p.orbA)*p.orbR*.55}
 
-    // Cursor
-    var cd = document.getElementById('cursorDot'), cr = document.getElementById('cursorRing');
-    if (window.matchMedia('(pointer: fine)').matches) {
-        document.addEventListener('mousemove', function(e) {
-            cd.style.left = e.clientX - 3 + 'px'; cd.style.top = e.clientY - 3 + 'px';
-            cr.style.left = e.clientX - 18 + 'px'; cr.style.top = e.clientY - 18 + 'px';
-        });
-        document.querySelectorAll('a,button,.edge-point,.skill-tag,.project-card,.exp-card,.trusted-item,.social-btn').forEach(function(el) {
-            el.addEventListener('mouseenter', function() { cr.style.transform = 'scale(1.5)'; cr.style.opacity = '0.2'; });
-            el.addEventListener('mouseleave', function() { cr.style.transform = 'scale(1)'; cr.style.opacity = '0.4'; });
-        });
-    } else { cd.style.display = cr.style.display = 'none'; }
+// Bounce — clear hist on hit
+var hit=false;
+if(p.x<PAD){p.vx=Math.abs(p.vx)+.02;p.x=PAD;hit=true}
+if(p.x>w-PAD){p.vx=-Math.abs(p.vx)-.02;p.x=w-PAD;hit=true}
+if(p.y<PAD){p.vy=Math.abs(p.vy)+.02;p.y=PAD;hit=true}
+if(p.y>h-PAD){p.vy=-Math.abs(p.vy)-.02;p.y=h-PAD;hit=true}
+if(hit)p.hist=[];
 
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
-        a.addEventListener('click', function(e) {
-            var t = document.querySelector(this.getAttribute('href'));
-            if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
-        });
-    });
+p.hist.push(p.x,p.y);if(p.hist.length>p.hLen*2)p.hist.splice(0,2);
+var len=p.hist.length/2;if(len<3)continue;
 
-    // =============================================
-    //  OPTIMIZED CANVAS — NO LINE ARTIFACTS
-    // =============================================
-    (function() {
-        var canvas = document.getElementById('trailCanvas');
-        if (!canvas) return;
-        var ctx = canvas.getContext('2d');
-        var w = 0, h = 0;
-        var running = true;
+// Single stroke
+ctx.beginPath();ctx.moveTo(p.hist[0],p.hist[1]);
+for(var j=1;j<len;j++)ctx.lineTo(p.hist[j*2],p.hist[j*2+1]);
+var ha=dk?p.mo:p.mo*1.3;
+ctx.strokeStyle='rgba('+p.col[0]+','+p.col[1]+','+p.col[2]+','+ha+')';
+ctx.lineWidth=p.lw;ctx.lineCap='round';ctx.lineJoin='round';ctx.globalAlpha=.75;ctx.stroke();
 
-        function resize() {
-            var hero = canvas.closest('.hero');
-            w = hero.offsetWidth;
-            h = hero.offsetHeight;
-            canvas.width = w;
-            canvas.height = h;
-            // Re-randomize positions within new bounds
-            for (var i = 0; i < pts.length; i++) {
-                pts[i].x = Math.random() * w;
-                pts[i].y = Math.random() * h;
-                if (pts[i].motion === 2) { pts[i].ocx = pts[i].x; pts[i].ocy = pts[i].y; }
-                pts[i].hist = [];
-            }
-            for (var j = 0; j < dots.length; j++) {
-                dots[j].x = Math.random() * w;
-                dots[j].y = Math.random() * h;
-            }
-        }
-
-        document.addEventListener('visibilitychange', function() {
-            running = !document.hidden;
-            if (running) lastT = performance.now();
-        });
-
-        // Colors
-        var COLS = [
-            [255, 107, 74],
-            [168, 85, 247],
-            [255, 138, 110],
-            [196, 130, 255],
-            [255, 160, 135]
-        ];
-
-        // Trail particles — all bound-constrained, NO wrapping
-        var pts = [];
-        var PCOUNT = window.innerWidth < 768 ? 18 : 28;
-
-        for (var i = 0; i < PCOUNT; i++) {
-            var mx = Math.random();
-            var spd = 0.15 + Math.random() * 0.2;
-            var ang = Math.random() * 6.2832;
-            var px = Math.random() * 1200;
-            var py = Math.random() * 800;
-            pts.push({
-                x: px, y: py,
-                vx: Math.cos(ang) * spd,
-                vy: Math.sin(ang) * spd,
-                hist: [],
-                hl: 25 + (Math.random() * 20 | 0),
-                col: COLS[Math.random() * COLS.length | 0],
-                lw: 0.4 + Math.random() * 0.6,
-                tr: 0.8 + Math.random() * 0.8,
-                motion: mx < 0.45 ? 0 : mx < 0.75 ? 1 : 2,
-                ph: Math.random() * 6.2832,
-                ps: 0.01 + Math.random() * 0.015,
-                wa: 0.15 + Math.random() * 0.3,
-                or: 40 + Math.random() * 70,
-                ocx: px, ocy: py,
-                oa: Math.random() * 6.2832,
-                os: 0.004 + Math.random() * 0.006,
-                maxOp: 0.22 + Math.random() * 0.16
-            });
-        }
-
-        // Ambient dots (twinkling stars)
-        var dots = [];
-        var DCOUNT = window.innerWidth < 768 ? 12 : 18;
-        for (var d = 0; d < DCOUNT; d++) {
-            dots.push({
-                x: Math.random() * 1200,
-                y: Math.random() * 800,
-                r: 0.4 + Math.random() * 0.7,
-                ph: Math.random() * 6.2832,
-                sp: 0.02 + Math.random() * 0.025,
-                col: COLS[Math.random() * COLS.length | 0]
-            });
-        }
-
-        resize();
-        window.addEventListener('resize', resize);
-
-        var lastT = performance.now();
-
-        function frame(now) {
-            requestAnimationFrame(frame);
-            if (!running) return;
-
-            var dt = (now - lastT) / 16.667;
-            if (dt > 4) dt = 4;
-            lastT = now;
-
-            ctx.clearRect(0, 0, w, h);
-            var isDark = html.getAttribute('data-theme') === 'dark';
-
-            // Stars
-            var sop = isDark ? 0.2 : 0.3;
-            for (var di = 0; di < dots.length; di++) {
-                var dot = dots[di];
-                dot.ph += dot.sp * dt;
-                var a = (Math.sin(dot.ph) * 0.5 + 0.5) * sop;
-                if (a < 0.02) continue;
-                ctx.globalAlpha = a;
-                ctx.fillStyle = 'rgb(' + dot.col[0] + ',' + dot.col[1] + ',' + dot.col[2] + ')';
-                ctx.beginPath();
-                ctx.arc(dot.x, dot.y, dot.r, 0, 6.2832);
-                ctx.fill();
-            }
-
-            // Trails
-            for (var pi = 0; pi < pts.length; pi++) {
-                var p = pts[pi];
-                p.ph += p.ps * dt;
-
-                // Motion — all bound-constrained
-                if (p.motion === 0) {
-                    p.x += (p.vx + Math.sin(p.ph) * p.wa * 0.3) * dt;
-                    p.y += (p.vy + Math.cos(p.ph * 0.7 + 1.3) * p.wa * 0.2) * dt;
-                } else if (p.motion === 1) {
-                    p.x += p.vx * dt;
-                    p.y += (Math.sin(p.ph) * p.wa * 0.5 + p.vy * 0.3) * dt;
-                } else {
-                    p.oa += p.os * dt;
-                    p.x = p.ocx + Math.cos(p.oa) * p.or;
-                    p.y = p.ocy + Math.sin(p.oa) * p.or * 0.6;
-                }
-
-                // Soft boundary bounce — prevent any crossing
-                var pad = 40;
-                if (p.x < pad) { p.vx = Math.abs(p.vx); p.x = pad; p.hist = []; }
-                if (p.x > w - pad) { p.vx = -Math.abs(p.vx); p.x = w - pad; p.hist = []; }
-                if (p.y < pad) { p.vy = Math.abs(p.vy); p.y = pad; p.hist = []; }
-                if (p.y > h - pad) { p.vy = -Math.abs(p.vy); p.y = h - pad; p.hist = []; }
-
-                // History
-                p.hist.push(p.x, p.y);
-                if (p.hist.length > p.hl * 2) p.hist.splice(0, 2);
-
-                var len = p.hist.length / 2;
-                if (len < 3) continue;
-
-                // Draw single stroke
-                ctx.beginPath();
-                ctx.moveTo(p.hist[0], p.hist[1]);
-                for (var j = 1; j < len; j++) {
-                    ctx.lineTo(p.hist[j * 2], p.hist[j * 2 + 1]);
-                }
-                var ha = isDark ? p.maxOp : p.maxOp * 1.4;
-                ctx.strokeStyle = 'rgba(' + p.col[0] + ',' + p.col[1] + ',' + p.col[2] + ',' + ha + ')';
-                ctx.lineWidth = p.lw;
-                ctx.lineCap = 'round';
-                ctx.lineJoin = 'round';
-                ctx.globalAlpha = 0.65;
-                ctx.stroke();
-
-                // Glowing tip
-                var tx = p.hist[(len - 1) * 2];
-                var ty = p.hist[(len - 1) * 2 + 1];
-                ctx.globalAlpha = isDark ? 0.55 : 0.7;
-                ctx.fillStyle = 'rgb(' + p.col[0] + ',' + p.col[1] + ',' + p.col[2] + ')';
-                ctx.beginPath();
-                ctx.arc(tx, ty, p.tr, 0, 6.2832);
-                ctx.fill();
-            }
-            ctx.globalAlpha = 1;
-        }
-
-        requestAnimationFrame(frame);
-    })();
+// Glowing tip
+ctx.globalAlpha=dk?.65:.8;
+ctx.fillStyle='rgb('+p.col[0]+','+p.col[1]+','+p.col[2]+')';
+ctx.beginPath();ctx.arc(p.hist[(len-1)*2],p.hist[(len-1)*2+1],p.tipR,0,6.2832);ctx.fill()}
+ctx.globalAlpha=1}
+requestAnimationFrame(frame)})();
 </script>
 </body>
 </html>
