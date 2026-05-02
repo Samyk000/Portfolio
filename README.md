@@ -17,14 +17,11 @@
 
 <div align="center">
 
-### Dark Mode
 
 <img src="image.png" alt="Portfolio — Dark Mode Preview" width="100%" style="border-radius: 16px; border: 1px solid rgba(255,255,255,0.08);" />
 
 <br/>
 <br/>
-
-### Light Mode
 
 <img src="image2.png" alt="Portfolio — Light Mode Preview" width="100%" style="border-radius: 16px; border: 1px solid rgba(0,0,0,0.08);" />
 
